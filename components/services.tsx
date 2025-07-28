@@ -8,6 +8,7 @@ import LotusDecoration from "@/components/decorations/lotus-decoration"
 import OrigamiDecoration from "@/components/decorations/origami-decoration"
 import WaveDecoration from "@/components/decorations/wave-decoration"
 import CherryPetals from "./decorations/cherry-petals"
+import Link from "next/link"
 
 const Services = () => {
   const services = [
@@ -77,8 +78,8 @@ const Services = () => {
 
       {/* Floating SVG Decorations */}
       <div className="absolute inset-0 pointer-events-none">
-        <SakuraDecoration className="absolute top-24 right-20 animate-float text-cherry-pink/40" />
-        <LotusDecoration className="absolute top-40 left-16 animate-float-delayed text-cherry-blossom/50" />
+        <SakuraDecoration className="absolute top-24 right-20 animate-float text-cherry-pink/40 opacity-30 -z-1" />
+        <LotusDecoration className="absolute top-40 left-16 animate-float-delayed text-cherry-blossom/50 opacity-25 -z-1" />
         <OrigamiDecoration className="absolute bottom-40 right-32 animate-spiral text-cherry-deep/40" />
         <WaveDecoration className="absolute bottom-24 left-24 animate-sway text-cherry-wine/30" />
         <SakuraDecoration className="absolute top-1/3 left-1/3 animate-float-slow text-cherry-sunset/35" />
@@ -180,12 +181,14 @@ const Services = () => {
             <p className="text-burgundy/80 mb-6 max-w-2xl mx-auto">
               Umów się na bezpłatną konsultację, podczas której dobierzemy idealny zabieg dla Twojej skóry
             </p>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-cherry-wine to-burgundy hover:from-burgundy hover:to-cherry-wine shadow-lg hover:scale-110 hover:rotate-1 hover:shadow-xl transition-all duration-300"
-            >
-              Bezpłatna Konsultacja
-            </Button>
+            <Link href="#contact">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-cherry-wine to-burgundy hover:from-burgundy hover:to-cherry-wine shadow-lg hover:scale-110 hover:rotate-1 hover:shadow-xl transition-all duration-300"
+              >
+                Bezpłatna Konsultacja
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

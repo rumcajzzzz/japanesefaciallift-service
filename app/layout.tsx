@@ -4,10 +4,29 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Japoński Lifting Twarzy',
+  description:
+    'Odkryj japoński lifting twarzy – naturalną metodę odmładzania bez skalpela. Zrelaksuj mięśnie, popraw owal twarzy i odzyskaj blask. Sprawdź naszą ofertę w profesjonalnym gabinecie masażu.',
+  keywords: [
+    'japoński lifting twarzy',
+    'masaż twarzy',
+    'lifting bez skalpela',
+    'naturalne odmładzanie',
+    'masaż transbukalny',
+    'terapia twarzy',
+    'gabinet urody',
+    'uroda bez inwazyjnych zabiegów',
+  ],
+  openGraph: {
+    title: 'Japoński Lifting Twarzy – Naturalne Odmłodzenie | Gabinet Urody',
+    description:
+      'Poznaj japoński lifting twarzy – technikę masażu, która odmładza, modeluje i przywraca skórze jędrność. Umów wizytę już dziś.',
+    siteName: 'Gabinet Urody',
+    locale: 'pl_PL',
+    type: 'website',
+  },
 }
+
 
 export default function RootLayout({
   children,
@@ -15,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pl" className='scroll-smooth'>
       <head>
         <style>{`
 html {

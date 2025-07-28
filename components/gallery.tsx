@@ -58,10 +58,10 @@ const Gallery = () => {
       className="py-20 bg-gradient-to-b from-cherry/20 via-sakura/30 to-cherry/10 relative overflow-hidden"
     >
       {/* Enhanced Decorations */}
-      <OrigamiDecoration className="absolute top-16 right-12 animate-spiral" />
-      <FanDecoration className="absolute top-40 left-8 animate-sway" />
+      <OrigamiDecoration className="absolute top-16 right-12 animate-spiral opacity-25 -z-index-1" />
+      <FanDecoration className="absolute top-40 left-8 animate-sway opacity-35 -z-index-1" />
       <MountainDecoration className="absolute bottom-20 right-20 animate-float-slow" />
-      <OrigamiDecoration className="absolute bottom-40 left-16 animate-float-delayed" />
+      <OrigamiDecoration className="absolute bottom-40 left-16 animate-float-delayed " />
 
       {/* Organic Background Shapes */}
       <div className="absolute inset-0 pointer-events-none">

@@ -11,8 +11,8 @@ const About = () => {
       className="py-20 bg-gradient-to-b from-sakura/20 via-cherry/30 to-sakura/10 relative overflow-hidden"
     >
       {/* Enhanced Decorations */}
-      <BambooDecoration className="absolute top-10 right-8 animate-sway" />
-      <LotusDecoration className="absolute top-32 left-12 animate-float" />
+      <BambooDecoration className="absolute top-10 right-8 animate-sway opacity-40 -z-index-1" />
+      <LotusDecoration className="absolute top-60 left-13 animate-float opacity-40 -z-999" />
       <KoiDecoration className="absolute bottom-19 right-16 animate-drift opacity-20" />
       <LotusDecoration className="absolute bottom-32 left-5 animate-float-delayed opacity-20" />
 
@@ -25,7 +25,7 @@ const About = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Images Grid */}
-          <div className="grid grid-cols-2 gap-4 animate-fade-right">
+          <div className="order-2 md:order-1 grid grid-cols-2 gap-4 animate-fade-right">
             <div className="space-y-4">
               <img
                 src="/2.avif"
@@ -53,7 +53,7 @@ const About = () => {
           </div>
 
           {/* Content */}
-          <div className="space-y-8 animate-fade-left">
+          <div className="order-1 md:order-2 space-y-8 animate-fade-left">
             <div className="space-y-4">
               <h2 className="text-4xl lg:text-5xl font-bold text-burgundy">
                 Filozofia <span className="text-sakura-dark highlight-sakura">Zen</span> w Pielęgnacji

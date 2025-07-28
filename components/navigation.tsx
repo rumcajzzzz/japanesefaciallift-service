@@ -27,12 +27,25 @@ const Navigation = () => {
     { href: "#contact", label: "Kontakt" },
   ]
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 300)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+  
   return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-cream/95 backdrop-blur-md shadow-cherry" : "bg-transparent"
-      }`}
-    >
+      <nav
+        className={`top-0 w-full z-50 transition-all duration-500 ease-in-out transform
+          md:fixed md:translate-y-0 md:opacity-100 md:bg-cream/95 md:backdrop-blur-md md:shadow-cherry
+          ${
+            isScrolled
+              ? "fixed translate-y-0 opacity-100 bg-cream/95 backdrop-blur-md shadow-cherry"
+              : "absolute -translate-y-10 opacity-0"
+          }
+        `}
+      >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <button

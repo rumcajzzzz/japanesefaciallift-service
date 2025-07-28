@@ -8,7 +8,7 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-cream via-warm-beige to-sage/20">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-cream via-warm-beige to-sage/20 my-8 md:my-0">
       <div className="absolute inset-0 pointer-events-none">
         <SakuraDecoration className="absolute top-20 right-10 animate-float" />
         <WaveDecoration className="absolute bottom-32 left-8 animate-float-delayed" />

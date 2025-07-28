@@ -22,7 +22,7 @@ const Contact = () => {
       </div>
 
       {/* SVG Decorations */}
-      <SakuraDecoration className="absolute top-16 right-12 animate-float text-cherry-pink/60" />
+      <SakuraDecoration className="absolute top-10 right-12 animate-float text-cherry-pink/60 opacity-50 -z-5"  />
       <FanDecoration className="absolute bottom-24 left-8 animate-sway text-cherry-deep/50" />
 
       <div className="container mx-auto px-4 relative z-10">
@@ -38,11 +38,11 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8 animate-fade-right">
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6">
               <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-cherry hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="pb-3">
                   <div className="w-12 h-12 bg-gradient-to-r from-cherry-blossom to-cherry-pink rounded-full flex items-center justify-center mb-3">
-                    <MapPin className="h-6 w-6 text-white" />
+                    <MapPin className="h-6 w-6" />
                   </div>
                   <CardTitle className="text-lg text-burgundy">Adres</CardTitle>
                 </CardHeader>
@@ -58,7 +58,7 @@ const Contact = () => {
               <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-cherry hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="pb-3">
                   <div className="w-12 h-12 bg-gradient-to-r from-cherry-deep to-cherry-wine rounded-full flex items-center justify-center mb-3">
-                    <Phone className="h-6 w-6 text-white" />
+                    <Phone className="h-6 w-6" />
                   </div>
                   <CardTitle className="text-lg text-burgundy">Telefon</CardTitle>
                 </CardHeader>
@@ -70,7 +70,7 @@ const Contact = () => {
               <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-cherry hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="pb-3">
                   <div className="w-12 h-12 bg-gradient-to-r from-cherry-sunset to-cherry-blossom rounded-full flex items-center justify-center mb-3">
-                    <Mail className="h-6 w-6 text-white" />
+                    <Mail className="h-6 w-6 " />
                   </div>
                   <CardTitle className="text-lg text-burgundy">Email</CardTitle>
                 </CardHeader>
@@ -82,7 +82,7 @@ const Contact = () => {
               <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-cherry hover:shadow-lg transition-shadow duration-300">
                 <CardHeader className="pb-3">
                   <div className="w-12 h-12 bg-gradient-to-r from-cherry-pink to-cherry-deep rounded-full flex items-center justify-center mb-3">
-                    <Clock className="h-6 w-6 text-white" />
+                    <Clock className="h-6 w-6 " />
                   </div>
                   <CardTitle className="text-lg text-burgundy">Godziny</CardTitle>
                 </CardHeader>
@@ -141,7 +141,7 @@ const Contact = () => {
                 />
               </div>
               <Button
-                className="w-full bg-gradient-to-r from-cherry-blossom to-cherry-deep hover:from-cherry-pink hover:to-cherry-wine text-white shadow-cherry hover:shadow-lg transition-all duration-300"
+                className="w-[50px]transition-all duration-300 z-10 hover:scale-110 transition-all"
                 size="lg"
               >
                 Wyślij zapytanie
